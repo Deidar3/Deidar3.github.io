@@ -1,3 +1,5 @@
+import BlueShadowText from "../components/BlueShadowText";
+
 const Home = () => {
     return (
         <div className='flex flex-col'>
@@ -13,9 +15,9 @@ const Home = () => {
                 CTF/Wargames Writeups 👨🏻‍💻
             </h1>    
             <div className='mt-5 flex flex-row align-center justify-center'>
-                <a className='p-2' href='/about'>About me 👀</a>
+                <a className='p-2' href='#about'>About me 👀</a>
                 <p className='mt-1 mx-2 text-2xl'>|</p>
-                <a className='p-2' href='https://github.com/Deidar3/'>GitHub 🧨</a>
+                <a className='p-2' target="_blank" href='https://github.com/Deidar3/'>GitHub 🧨</a>
             </div>
 
             <div className='flex justify-center align-center mt-5'>
@@ -23,15 +25,16 @@ const Home = () => {
             </div>
             
             <div className='flex flex-col align-center justify-center mx-auto'>
-                <p className='mt-8 mb-5 text-cyan-400 text-shadow-inherit [text-shadow:_5px_2px_5px_#85d0ff] text-2xl'>CTF Writeups</p>
+                <BlueShadowText text="Writeups" />
                 <div className='flex flex-col w-1/2'>
-                    <div className='p-3 bg-gray-100 mb-5 w-[280px] sm:w-[400px] md:w-[600px] rounded-sm'>
-                    Soon!
-                    </div>
-                    {/* <div className='p-3 bg-cyan-100 mb-5'>
-                        dsdsaa
-                    </div> */}
+                    <a href="#pwnablekr-bof">
+                        <div className='p-3 bg-gray-100 mb-5 w-[280px] sm:w-[400px] md:w-[600px] rounded-sm '>
+                                Pwnable.kr - bof
+                        </div>
+                    </a>
                 </div>
+
+
             </div>
 
         </div>
