@@ -3,10 +3,25 @@ import BlueShadowText from "../components/BlueShadowText";
 const Home = () => {
     return (
         <div className='flex flex-col'>
-            <figure class="css-3mn275 e1197rjj0">
-                <img alt="A commuter walks past the closed gates of New Jersey Transit Ticketing area at Penn Station, New York, NY, USA." fetchpriority="high" width="1280" height="720" decoding="async" data-nimg="1" style="color:transparent" sizes="(min-width: 960px) 700px, 95vw" srcset="https://www.economist.com/cdn-cgi/image/width=360,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 360w, https://www.economist.com/cdn-cgi/image/width=384,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 384w, https://www.economist.com/cdn-cgi/image/width=480,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 480w, https://www.economist.com/cdn-cgi/image/width=600,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 600w, https://www.economist.com/cdn-cgi/image/width=834,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 834w, https://www.economist.com/cdn-cgi/image/width=960,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 960w, https://www.economist.com/cdn-cgi/image/width=1096,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 1096w, https://www.economist.com/cdn-cgi/image/width=1280,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 1280w, https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 1424w" src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg" />
-                <figcaption class="css-1dkrsla e15o9k8g2"><span class="css-1st60ou e15o9k8g1">
-                    Photograph: Alamy</span></figcaption></figure>
+<figure className="css-3mn275 e1197rjj0">
+    <img
+        alt="A commuter walks past the closed gates of New Jersey Transit Ticketing area at Penn Station, New York, NY, USA."
+        fetchpriority="high"
+        width="1280"
+        height="720"
+        decoding="async"
+        data-nimg="1"
+        style={{ color: "transparent" }} // <-- FIXED
+        sizes="(min-width: 960px) 700px, 95vw"
+        srcSet="https://www.economist.com/cdn-cgi/image/width=360,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 360w, https://www.economist.com/cdn-cgi/image/width=384,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 384w, https://www.economist.com/cdn-cgi/image/width=480,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 480w, https://www.economist.com/cdn-cgi/image/width=600,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 600w, https://www.economist.com/cdn-cgi/image/width=834,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 834w, https://www.economist.com/cdn-cgi/image/width=960,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 960w, https://www.economist.com/cdn-cgi/image/width=1096,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 1096w, https://www.economist.com/cdn-cgi/image/width=1280,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 1280w, https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg 1424w"
+        src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20250726_FNP501.jpg"
+    />
+    <figcaption className="css-1dkrsla e15o9k8g2">
+        <span className="css-1st60ou e15o9k8g1">
+            Photograph: Alamy
+        </span>
+    </figcaption>
+</figure>
             <div className='flex justify-center align-center mt-10'>
                 <img className="rounded-full w-44 border-2 border-black" src='https://avatars.githubusercontent.com/u/85759165?v=4' alt="github avatar" />
             </div>
