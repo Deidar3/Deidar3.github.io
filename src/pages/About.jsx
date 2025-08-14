@@ -15,7 +15,7 @@ const About = () => {
           <p>
             📧 Email: <a className="text-blue-600 underline" target="_blank" href='mailto:szymonrydzewski1c2pg@gmail.com'>szymonrydzewski1c2pg@gmail.com</a><br />
             💼 LinkedIn: <a className="text-blue-600 underline" target="_blank" href="https://www.linkedin.com/in/szymon-rydzewski-a44730219/">Szymon Rydzewski</a><br />
-            🐦 Twitter: <a className="text-blue-600 underline" target="_blank" href="https://x.com/Szymon46022913">deidar3</a><br /><br />
+            🐦 Twitter: <a className="text-blue-600 underline" target="_blank" href="https://x.com/deidar3_">deidar3</a><br /><br />
           </p>
         </div>
       </div>
