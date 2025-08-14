@@ -6,7 +6,7 @@ const About = () => {
         <div className="w-full max-w-3xl text-center">
           <BlueShadowText text="About Me" size="text-3xl font-semibold" />
           <p className="mb-6">
-            Passionate cybersecurity enthusiast from Poland, currently pursuing a Bachelor’s in Computer Science (3rd Year) with an interest in web/android security, reverse engineering, binary exploitation and bug bounty hunting, with a strong focus on web security.
+            Passionate cybersecurity enthusiast from Poland, currently pursuing a Master's in Computer Science with an interest in web/android security, reverse engineering, binary exploitation and bug bounty hunting, with a strong focus on web security.
             <br /><br />
             My account on HackerOne bug bounty platform: <a className="text-blue-600 underline" target="_blank" href="https://hackerone.com/deidar3">Link</a>
           </p>
