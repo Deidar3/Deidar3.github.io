@@ -204,7 +204,7 @@ int main(int argc, char* argv[]){
                     <img className='rounded-md mt-5 w-full max-w-2xl mx-auto h-auto' src={triggered_breakpoint} alt="triggered_breakpoint" />
                     
                     <div className="text-center my-6">
-                        <p className="mb-4">We can examine the memory at [ebp - 0x8] to see what is stored there:</p>
+                        <p className="mb-4">We can examine the memory at [ebp + 0x8] to see what is stored there:</p>
                         <img className='rounded-md w-full max-w-lg mx-auto h-auto' src={ebp_0x8_examine} alt="ebp_0x8_examine" />
                         <div className="mt-2 text-sm">
                             <b>x</b> - examine memory<br />
@@ -240,7 +240,7 @@ int main(int argc, char* argv[]){
                         <span className="text-green-500 font-bold">gef➤</span> run &lt; payload
                     </div>
                     
-                    <p className="mb-4">After hitting the breakpoint, we will examine memory at [ebp - 0x8] again to verify if it worked:</p>
+                    <p className="mb-4">After hitting the breakpoint, we will examine memory at [ebp + 0x8] again to verify if it worked:</p>
                     
                     <img className='rounded-md mt-5 w-full max-w-lg mx-auto h-auto' src={bebafeca} alt="bebafeca" />
                     
@@ -265,7 +265,7 @@ int main(int argc, char* argv[]){
                     <img className='rounded-md mt-5 w-full max-w-lg mx-auto h-auto' src={cafebabe} alt="cafebabe" />
                     
                     <p className="mt-4 mb-4">
-                        This time it was successful, 0xcafebabe is stored in memory at [ebp - 0x8].
+                        This time it was successful, 0xcafebabe is stored in memory at [ebp + 0x8].
                         Now we can continue program execution by using <b className="text-red-500">c</b> command in gdb.
                     </p>
                     
@@ -298,7 +298,7 @@ int main(int argc, char* argv[]){
                     </div>
                     
                     <p className="mb-4">
-                        But why does it work? It works because the first cat sends the payload, while the second cat keeps stdin open. When the program spawns a shell after the exploit, the shell's stdin is still connected to your terminal, allowing interactive input.
+                        But how does it work? First cat command sends the payload, while the second cat keeps stdin open. When the program spawns a shell after the exploit, the shell's stdin is still connected to your terminal, allowing interactive input.
                     </p>
                     
                     <img className='rounded-md mt-5 w-full max-w-2xl mx-auto h-auto' src={local_success} alt="local_success" />
