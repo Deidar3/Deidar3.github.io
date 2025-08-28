@@ -301,7 +301,7 @@ int main(int argc, char* argv[]){
                         But how does it work? First cat command sends the payload, while the second cat keeps stdin open. When the program spawns a shell after the exploit, the shell's stdin is still connected to your terminal, allowing interactive input.
                     </p>
                     
-                    <img className='rounded-md mt-5 w-full max-w-2xl mx-auto h-auto' src={local_success} alt="local_success" />
+                    <img className='rounded-md mt-5 w-full max-w-md mx-auto h-auto' src={local_success} alt="local_success" />
                     
                     <p className="mt-6 mb-4">
                         Success! We now have a shell! Let's use it remotely to retrieve the flag.
